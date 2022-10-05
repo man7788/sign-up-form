@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up Form</title>
-  <script src="javascript.sj" defer></script>
+  <script src="javascript.js" defer></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,9 +14,15 @@
     <div class="left-container">
       <div class="left-bg">
         <div class="odin-container">
-        <img class="odin-logo" src="../image/odin-lined.png" alt="odin-logo">
-        <div class="odin-word">Odin</div>
+          <img class="odin-logo" src="../image/odin-lined.png" alt="odin-logo">
+          <div class="odin-word">Odin</div>
         </div>
+        <div class="credit">Photo by 
+          <a href="https://unsplash.com/@haliewestphoto">Halie West</a> 
+          on <a href="https://unsplash.com/">Unsplash</a>
+
+        </div>
+
       </div>
     </div>
 
@@ -33,37 +39,38 @@
         <div class="form-container"> 
           <form action="">
               <div class="input-container">
-                <lengend>Let do this!</lengend>
+                <lengend>Let's do this!</lengend>
                 <div class="input-row">
                   <div class="input-wrap">
                     <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name">
+                    <input type="text" id="first-name" name="first-name" required>
                   </div>
                   <div class="input-wrap">
                     <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name">
+                    <input type="text" id="last-name" name="last-name" required>
                   </div>
                 </div>
 
                 <div class="input-row">
                   <div class="input-wrap">
                     <label for="email">EMAIL</label>
-                    <input type="text" id="email">
+                    <input type="email" id="email" name="email" required>
                   </div>
                   <div class="input-wrap">
                     <label for="phone-num">PHONE NUMBER</label>
-                    <input type="text" id="phone-num">
+                    <input type="tel" id="phone-num" name="phone-num" pattern="\d+$">
                   </div>
                 </div>
 
                 <div class="input-row">
                   <div class="input-wrap">
                     <label for="password">PASSWORD</label>
-                    <input type="text" id="password">
+                    <input type="password" id="password" name="password" required>
+                    <div class="match"></div>
                   </div>
                   <div class="input-wrap">
                     <label for="firm-password">CONFIRM PASSWORD</label>
-                    <input type="text" id="firm-password">
+                    <input type="password" id="firm-password" name="firm-password" required>
                   </div>
                 </div>
 
