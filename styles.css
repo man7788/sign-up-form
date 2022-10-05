@@ -1,69 +1,166 @@
-@font-face {
-  font-family: Norse-Bold;
-  src: url(../font/Norse-Bold.otf);
-}
-
 * {
-  font-family: Norse-Bold, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* :root {
-  --left-bg-size: 30vw;
-  --right-bg-size: calc(100vw - var(--left-bg-size));
-} */
+@import url(../font/Norse-Bold.otf);
+
+
+@font-face {
+  font-family: Norse-Bold;
+  src: url(../font/Norse-Bold.otf);
+}
+
+body {
+  padding: 0 12vw 0 12vw;
+  background: black;
+}
 
 .main-container {
   display: flex;
 }
 
 .left-container {
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
 }
 
 .left-bg {
+  /* border: 3px solid red; */
   background: url(../image/halie-west-25xggax4bSA-unsplash.jpg);
   background-size: cover; 
   background-repeat: no-repeat;
-  /* background-position: -80px; */
-  border: 3px solid red;
   display: flex;
-  width: 30vw;
+  width: max(30vw, 180px);
   height: 100vh;
 }
 
 .odin-container {
-  border: 3px solid orange;
+  /* border: 3px solid orange; */
   background: rgba(0, 0, 0, 0.501);
   display: flex;
   flex: 1 1 100%;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   height: 15vh;
   position: relative;
-  top: 250px;
-  flex-wrap: wrap;
+  top: 160px;
+  padding: 0.1rem 0;
   min-width: 0;
 }
 
-.odin-logo {
+.odin-logo { 
+  /* border: 3px solid lawngreen; */
   flex: 0 1 auto;
   height: 100%;
-  border: 3px solid lawngreen;
 }
 
-.odin-word {
+.odin-word { 
+  /* border: 3px solid lawngreen; */
   flex: 0 1 auto;
-  font-size: 13vh;
-  border: 3px solid lawngreen;
-  color: white;  
-  padding-top: 2vh;
+  font-size: 5rem;
+  color: white;
+  font-family: Norse-Bold, sans-serif;
+  /* padding-top: 1.2rem; */
+  height: 4.2rem;
  }
 
+.msg-container,
+.button-container,
+.lengend-container {
+  padding-left: 2rem;
+}
+
 .right-container {
-  background: purple;
-  border: 3px solid orange;
+  /* border: 3px solid blueviolet; */
+  background: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 70vw;
   height: 100vh;
+  display: flex;
+}
+
+.right-inner-container {
+  /* border: 3px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.msg-container {
+  /* border: 3px solid orange; */
+  position: relative;
+  bottom: 3.5rem;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.message-top {
+  /* border: 3px solid rgb(227, 252, 0); */
+  padding-right: 3rem;
+}
+
+.message-bottom {
+  /* border: 3px solid lawngreen; */
+  margin-top: 1rem;
+}
+
+.form-container {
+  /* border: 3px solid blue; */
+  /* position: relative;
+  bottom: 0.1rem; */
+}
+
+.input-container {
+  /* border: 3px solid cyan; */
+  background: white;
+  margin-bottom: 2rem;
+  padding: 2rem 2rem;
+  box-shadow: 0 5px 5px -1px rgba(0, 0, 0, 0.113);
+}
+
+.input-wrap {
+  /* border: 3px solid red; */
+  color: dimgray;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+  margin-right: 2rem;
+  line-height: 1.5;
+  font-size: 0.55rem;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+}
+
+.input-row {
+  /* border: 3px solid blueviolet; */
+  display: flex;
+  margin-top: 1rem;
+}
+
+
+.button-container {
+  /* border: 3px solid orangered; */
+  font-size: 0.8rem;
+}
+
+button {
+  background: darkolivegreen;
+  color: white;
+  margin-bottom: 1rem;
+  padding: 0.8rem 2.5rem;
+  border-radius: 12px;
+  border: 0px solid transparent;
+  font-weight: bold;
+}
+
+.button-container span {
+  color: darkolivegreen;
+  font-weight: bold;
+}
+
+.input-container lengend {
+  font-weight: bold;
 }
