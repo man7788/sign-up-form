@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 
-@import url(../font/Norse-Bold.otf);
-
-
 @font-face {
   font-family: Norse-Bold;
   src: url(../font/Norse-Bold.otf);
@@ -199,21 +196,6 @@ input:focus {
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
 }
 
-input[type="password"]:invalid {
+input:invalid {
   border: 1px solid crimson;
 }
-
-input[name="password"]:invalid ~ div::before {
-  content: "* Passwords do not match";
-  color: crimson;
-  font-size: 0.5rem;
-  letter-spacing: 0;
-}
-
-/* input[name="firm-password"]:invalid ~ div::before {
-  content: "* Passwords do not match";
-  color: crimson;
-  font-size: 0.5rem;
-  letter-spacing: 0;
-} */
-
